@@ -1,12 +1,17 @@
 package com.example.androidkotlin
 
+import android.os.Build.VERSION_CODES.O
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
 class MainViewModel : ViewModel() {
-    val text : MutableLiveData<String> = MutableLiveData()
+    val counter : MutableLiveData<Int> = MutableLiveData()
 
     init {
-        text.value = "Test"
+        counter.value = O
+    }
+
+    fun onClickedIncrement(){
+        counter.value = (counter.value ?: 0) + 1
     }
 }

@@ -13,8 +13,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        mainViewModel.text.observe(this, Observer {
-            value -> main_text.text=value
+        main_button.setOnClickListener{
+            mainViewModel.onClickedIncrement()
+        }
+        mainViewModel.counter.observe(this, Observer {
+            value -> main_text.text=value.toString()
         })
 
     }
