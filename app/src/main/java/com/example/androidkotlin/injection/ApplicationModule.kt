@@ -8,11 +8,13 @@ import com.example.androidkotlin.data.repository.UserRepository
 import com.example.androidkotlin.domain.usecase.CreateUserUseCase
 import com.example.androidkotlin.domain.usecase.GetUserUseCase
 import com.example.androidkotlin.presentation.main.MainViewModel
+import com.example.androidkotlin.presentation.newAccount.NewAccountViewModel
 import org.koin.android.ext.koin.androidContext
 import org.koin.dsl.module
 
 val presentationModule = module {
     factory { MainViewModel(get(), get()) }
+    factory { NewAccountViewModel(get(), get()) }
 }
 
 val domainModule = module {

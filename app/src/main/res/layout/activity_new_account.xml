@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="15dp"
-    tools:context=".presentation.view.NewAccountActivity">
+    tools:context=".presentation.newAccount.NewAccountActivity">
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/new_login_input_layout"
@@ -44,7 +44,7 @@
         app:layout_constraintBottom_toTopOf="@+id/create_new_account_button">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/password_edit"
+            android:id="@+id/new_password_edit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="text"

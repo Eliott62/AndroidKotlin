@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="15dp"
-    tools:context=".presentation.view.MainActivity">
+    tools:context=".presentation.main.MainActivity">
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/login_input_layout"
