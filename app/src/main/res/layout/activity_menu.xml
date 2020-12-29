@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.application.MenuActivity"
+    >
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ligue 1"
+        android:textColor="#F44336"
+        android:textSize="36sp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="Saison 2020-2021"
+        android:textColor="#070707"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="410dp"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        app:srcCompat="@drawable/logo_l_one"
+        android:contentDescription="TODO" />
+
+    <Button
+        android:id="@+id/club_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Club" />
+
+
+    <Button
+        android:id="@+id/classement_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/club_button"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Classement Mi-Saison" />
+</RelativeLayout>

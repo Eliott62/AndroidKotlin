@@ -5,9 +5,11 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.lifecycle.Observer
 import com.example.androidkotlin.R
+import com.example.androidkotlin.presentation.application.MenuActivity
 import com.example.androidkotlin.presentation.newAccount.NewAccountActivity
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.coroutines.delay
 import org.koin.android.ext.android.inject
 
 class MainActivity : AppCompatActivity() {
@@ -27,6 +29,8 @@ class MainActivity : AppCompatActivity() {
                             dialog.dismiss()
                         }
                         .show()
+
+                    startActivity(Intent(this, MenuActivity::class.java))
                 }
               LoginError -> {
                     MaterialAlertDialogBuilder(this)

@@ -17,10 +17,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".presentation.newAccount.NewAccountActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+        </activity>
+        <activity android:name=".presentation.application.MenuActivity">
+        </activity>
+        <activity android:name=".presentation.application.ClassementActivity">
         </activity>
     </application>
 </manifest>
