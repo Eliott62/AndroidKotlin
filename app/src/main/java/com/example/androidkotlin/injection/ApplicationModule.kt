@@ -13,7 +13,7 @@ import org.koin.android.ext.koin.androidContext
 import org.koin.dsl.module
 
 val presentationModule = module {
-    factory { MainViewModel(get(), get()) }
+    factory { MainViewModel(get(),get()) }
     factory { NewAccountViewModel(get(), get()) }
 }
 

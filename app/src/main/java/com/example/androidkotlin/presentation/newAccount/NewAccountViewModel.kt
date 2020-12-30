@@ -9,7 +9,8 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
 class NewAccountViewModel(
-    private val createUserUseCase: CreateUserUseCase
+    private val createUserUseCase: CreateUserUseCase,
+    private val getUserUseCase: GetUserUseCase
 ) : ViewModel() {
 
     fun onClickedCreateNewAccount(email : String, password : String) {

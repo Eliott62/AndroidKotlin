@@ -12,7 +12,8 @@ import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 
 class MainViewModel(
-    private val getUserUseCase: GetUserUseCase
+    private val getUserUseCase: GetUserUseCase,
+    private val createUserUseCase: CreateUserUseCase
 ) : ViewModel() {
     val loginLiveData : MutableLiveData<LoginStatus> = MutableLiveData()
 

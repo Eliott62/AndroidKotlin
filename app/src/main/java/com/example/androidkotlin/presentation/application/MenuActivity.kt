@@ -14,5 +14,9 @@ class MenuActivity : AppCompatActivity() {
         classement_button.setOnClickListener {
             startActivity(Intent(this, ClassementActivity::class.java))
         }
+
+        club_button.setOnClickListener {
+            startActivity(Intent(this, ClubActivity::class.java))
+        }
     }
 }

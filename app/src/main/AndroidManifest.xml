@@ -5,9 +5,9 @@
     <application
         android:name=".injection.MyApplication"
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:icon="@drawable/logo_l_one"
+        android:label="Application Eliott L1"
+        android:roundIcon="@drawable/logo_l_one"
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidKotlin">
         <activity android:name=".presentation.main.MainActivity">
@@ -19,6 +19,8 @@
         <activity android:name=".presentation.newAccount.NewAccountActivity">
         </activity>
         <activity android:name=".presentation.application.MenuActivity">
+        </activity>
+        <activity android:name=".presentation.application.ClubActivity">
         </activity>
         <activity android:name=".presentation.application.ClassementActivity">
         </activity>
