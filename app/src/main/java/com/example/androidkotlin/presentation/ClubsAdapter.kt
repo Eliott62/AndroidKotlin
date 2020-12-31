@@ -15,6 +15,7 @@ import kotlinx.android.synthetic.main.row_layout_club.view.*
 class ClubsAdapter(private val clubs: List<Club>) : RecyclerView.Adapter<ClubsAdapter.ViewHolder>() {
         class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
         val teamName : TextView = itemView.teamName
+        // val logo : ImageView = itemView.logo
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -29,6 +30,7 @@ class ClubsAdapter(private val clubs: List<Club>) : RecyclerView.Adapter<ClubsAd
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val club = clubs[position]
         holder.teamName.text = club.name
+        //Glide.with(parent.context).load(logo).into(holder.logo)
     }
 
     override fun getItemCount() = clubs.size
